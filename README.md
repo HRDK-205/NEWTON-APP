@@ -1,17 +1,54 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyek ini dibuat menggunakan [Vite](https://vitejs.dev/) dengan framework **React**.
 
-Currently, two official plugins are available:
+## Prasyarat
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Sebelum mulai, pastikan sudah terpasang:
 
-## React Compiler
+- [Node.js](https://nodejs.org/) versi terbaru (disarankan LTS)
+- npm (otomatis terpasang bersama Node.js)  
+  atau bisa pakai yarn / pnpm kalau sudah familiar
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Cek versi:
+```bash
+node -v
+npm -v
 
-## Expanding the ESLint configuration
+1. Clone repository ini
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# NEWTON-APP" 
+git clone https://github.com/username/nama-project.git
+cd nama-project
+
+2. Ganti username dan nama-project dengan repo kamu sendiri.
+Instal dependency
+Menggunakan npm:
+
+npm install
+
+3. Menjalankan di Mode Development
+npm run dev
+
+
+4. Setelah itu, buka browser dan akses:
+
+http://localhost:5173
+
+src/main.jsx : Entry utama React
+
+src/App.jsx : Komponen utama aplikasi
+
+public/ : Asset statis
+
+vite.config.js : Konfigurasi Vite
+
+Cara Membuat Project Baru (Opsional)
+Jika ingin membuat project React + Vite dari awal:
+
+npm create vite@latest nama-project
+Pilih:
+Framework: React
+Variant: JavaScript atau TypeScript (sesuai kebutuhan)
+
+Dan pastikan nama folder node_modules sudah ada 
+dan jangan lupa instal @tailwinds
